@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c70">
+<title>مكتب برق التميز للخدمات العامة والسداد</title>
+<style>
+:root{--blue:#123c70;--blue2:#1d5b9b;--green:#15966d;--ink:#18324d;--muted:#64758a;--bg:#f3f7fb;--white:#fff;--line:#e2eaf2;--gold:#e8b95d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--blue)}
+.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,var(--blue),var(--green));display:grid;place-items:center;color:white;font-size:23px}
+.brand small{display:block;font-size:10px;letter-spacing:1.7px;color:var(--green);direction:ltr;text-align:right}
+.links{display:flex;gap:22px;font-size:14px;color:#425a73}.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;background:var(--green);color:#fff;font-weight:700;border:0;cursor:pointer;font:inherit}
+.btn.blue{background:var(--blue)}.btn.outline{background:transparent;border:1px solid #cbd9e7;color:var(--blue)}
+.hero{background:linear-gradient(115deg,#102f59,#174d7f 58%,#137b68);color:#fff;padding:78px 0 70px;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff22;border-radius:50%;left:-130px;top:-220px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff06}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px;position:relative;z-index:1}
+.kicker{color:#b8e8d8;font-size:14px;font-weight:700}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.35;margin:12px 0 16px}.hero p{color:#e0ebf5;max-width:640px;margin:0 0 25px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero .outline{color:white;border-color:#ffffff66}
+.hero-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:24px;padding:28px;backdrop-filter:blur(5px)}
+.hero-card strong{font-size:21px}.hero-card ul{padding-right:20px;color:#e2f0f0;margin-bottom:0}.hero-card li{margin:8px 0}
+.trust{background:white;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 0;text-align:center;color:#536b82;font-size:14px}.trust b{color:var(--blue)}
+section{padding:68px 0}.section-head{text-align:center;margin-bottom:32px}.section-head span{color:var(--green);font-weight:800;font-size:13px}.section-head h2{font-size:30px;color:var(--blue);margin:5px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 28px #123c7009}
+.icon{width:50px;height:50px;border-radius:15px;background:#e9f5f1;color:var(--green);display:grid;place-items:center;font-size:25px;margin-bottom:12px}
+.card h3{color:var(--blue);margin:0 0 7px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0 0 12px}.card ul{padding-right:18px;color:#53677b;font-size:14px;margin:0}
+.offers{background:#eaf2f8}.offer{background:white;border:1px solid #dbe7f0;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:8px}.offer .tag{color:var(--green);font-weight:800;font-size:12px}.offer h3{margin:0;color:var(--blue)}.offer p{margin:0;color:var(--muted);font-size:14px}
+.calculator{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:white;border:1px solid var(--line);border-radius:22px;padding:28px}
+label{display:block;font-size:14px;font-weight:700;margin:12px 0 6px}input,select,textarea{width:100%;border:1px solid #cfdae5;border-radius:10px;padding:12px;font:inherit;background:#fff;color:var(--ink)}
+.result{background:#eff7f4;border-radius:17px;padding:22px;display:flex;flex-direction:column;justify-content:center}.result small{color:var(--muted)}.result strong{font-size:32px;color:var(--green)}.result p{font-size:13px;color:var(--muted)}
+.contact{background:var(--blue);color:#fff}.contact .section-head h2{color:white}.contact .section-head p{color:#d4e2f0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-box{border:1px solid #ffffff30;border-radius:18px;padding:24px;background:#ffffff0b}.contact-box p{color:#d8e6f2}.contact-box .btn{margin:5px 5px 5px 0}
+footer{background:#0b2442;color:#c5d4e2;padding:24px 0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.whatsapp{position:fixed;bottom:20px;left:20px;background:#15966d;color:white;border-radius:50px;padding:13px 18px;box-shadow:0 8px 25px #0003;z-index:15;font-weight:800}
+.note{font-size:12px;color:var(--muted)}
+@media(max-width:800px){.links{display:none}.hero-grid,.calculator,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.hero{padding:55px 0}.hero-card{max-width:520px}.trust-grid{font-size:12px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.section-head h2{font-size:25px}.nav{height:68px}.brand{font-size:14px}.hero-actions .btn{width:100%}.trust-grid{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top"><span class="logo">ب</span><span>مكتب برق التميز<small>BARQ ALTAMAYUZ</small></span></a>
+<nav class="links"><a href="#services">خدماتنا</a><a href="#offers">العروض</a><a href="#calculator">حاسبة التمويل</a><a href="#contact">تواصل معنا</a></nav>
+<a class="btn" href="https://wa.me/966596891500" target="_blank" rel="noopener">واتساب المكتب</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="kicker">خدمات عامة • خدمات إلكترونية • سداد</div>
+<h1>ننجز خدماتك<br>بسرعة ودقة واهتمام</h1>
+<p>مكتب برق التميز للخدمات العامة والسداد — نساعد الأفراد والمنشآت في إنجاز مجموعة واسعة من الخدمات الحكومية والإدارية والإلكترونية، بخطوات واضحة ومتابعة مستمرة.</p>
+<div class="hero-actions"><a class="btn" href="https://wa.me/966596891500" target="_blank" rel="noopener">ابدأ طلبك عبر واتساب</a><a class="btn outline" href="#services">استعرض خدماتنا</a></div></div>
+<aside class="hero-card"><strong>خدمات للأفراد والمنشآت</strong><ul><li>متابعة وإنجاز الخدمات الحكومية</li><li>خدمات الشركات والموظفين</li><li>خدمات إلكترونية وإدارية</li><li>استفسارات التمويل وحساب الأقساط</li></ul></aside>
+</div></section>
+<div class="trust"><div class="wrap trust-grid"><div>✓ <b>سرعة</b> في متابعة الطلب</div><div>✓ <b>دقة</b> في إدخال البيانات</div><div>✓ <b>اهتمام</b> بخدمة العميل</div></div></div>
+<section id="services"><div class="wrap"><div class="section-head"><span>ماذا نقدم؟</span><h2>خدمات مكتب برق التميز</h2><p>اختر المجال المناسب وتواصل معنا لمعرفة المتطلبات والتفاصيل.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">👤</div><h3>خدمات الأفراد</h3><p>مساندة في الخدمات الحكومية والإلكترونية للأفراد.</p><ul><li>الضمان الاجتماعي وحساب المواطن</li><li>أبشر أفراد والخدمات الحكومية</li><li>ناجز والتأمينات الاجتماعية</li><li>خدمات وزارة الموارد البشرية</li></ul></article>
+<article class="card"><div class="icon">🏢</div><h3>خدمات الشركات والمنشآت</h3><p>خدمات إدارية وتنظيمية لدعم أعمال المنشآت.</p><ul><li>تأسيس الشركات وخدمات السجلات التجارية</li><li>نقل الكفالات وإدارة الموظفين</li><li>إدارة الرواتب وخدمات قوى ومقيم</li><li>رخص البلدية والتصاريح</li><li>المركز السعودي للأعمال</li></ul></article>
+<article class="card"><div class="icon">💳</div><h3>الخدمات المالية والتمويلية</h3><p>استفسارات ومساعدة في فهم خيارات التمويل.</p><ul><li>التمويل الشخصي وتمويل القطاع الخاص</li><li>التعريف بعروض الجهات التمويلية</li><li>توضيح الشروط والمتطلبات</li><li>حساب الأقساط والتكلفة التقديرية</li></ul></article>
+</div></div></section>
+<section id="offers" class="offers"><div class="wrap"><div class="section-head"><span>تابع الجديد</span><h2>العروض والتنبيهات</h2><p>تواصل معنا لمعرفة العروض المتاحة حالياً وشروط الاستفادة منها.</p></div>
+<div class="cards"><article class="offer"><span class="tag">خدمات الأفراد</span><h3>إنجاز الخدمات الحكومية</h3><p>استفسر عن الخدمة المطلوبة والمستندات اللازمة قبل البدء.</p><a class="btn blue" href="https://wa.me/966596891500?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%81%D8%B1%D8%A7%D8%AF" target="_blank" rel="noopener">استفسر الآن</a></article>
+<article class="offer"><span class="tag">قطاع الأعمال</span><h3>خدمات المنشآت</h3><p>أرسل نوع النشاط والخدمة المطلوبة لنوضح لك الخطوات والمتطلبات.</p><a class="btn blue" href="https://wa.me/966596891500?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA" target="_blank" rel="noopener">تواصل معنا</a></article>
+<article class="offer"><span class="tag">التمويل</span><h3>استفسارات التمويل</h3><p>تختلف الموافقة والتكلفة حسب الجهة والملف الائتماني والشروط المعتمدة.</p><a class="btn blue" href="https://wa.me/966596891500?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84" target="_blank" rel="noopener">اسأل عن التمويل</a></article></div></div></section>
+<section id="calculator"><div class="wrap"><div class="section-head"><span>أداة مساعدة</span><h2>حاسبة التمويل التقديرية</h2><p>أدخل مبلغ التمويل ومعدل الربح السنوي والمدة للحصول على تقدير مبسط.</p></div>
+<div class="calculator"><div><label for="amount">مبلغ التمويل (ريال)</label><input id="amount" type="number" min="1" value="80000"><label for="rate">معدل الربح السنوي (%)</label><input id="rate" type="number" min="0" step=".1" value="15"><label for="years">مدة التمويل (سنوات)</label><select id="years"><option value="1">سنة واحدة</option><option value="2">سنتان</option><option value="3">3 سنوات</option><option value="4">4 سنوات</option><option value="5" selected>5 سنوات</option></select><button class="btn blue" id="calc" style="margin-top:18px;width:100%">احسب القسط التقديري</button></div>
+<div class="result"><small>القسط الشهري التقديري بطريقة الربح الثابت</small><strong id="monthly">1,933.33 ر.س</strong><small>إجمالي السداد التقديري</small><b id="total">116,000.00 ر.س</b><p>هذه حسبة مبسطة وليست عرض تمويل أو تسعيراً معتمداً. قد تختلف التكلفة الفعلية حسب طريقة احتساب الجهة والرسوم والتأمين.</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><span>نحن هنا لخدمتك</span><h2>تواصل مع مكتب برق التميز</h2><p>يسعدنا استقبال استفسارك ومساعدتك في معرفة الخدمة المناسبة.</p></div>
+<div class="contact-grid"><div class="contact-box"><h3>قنوات التواصل</h3><p>رقم المكتب والواتساب</p><h2 dir="ltr">0596891500</h2><a class="btn" href="https://wa.me/966596891500" target="_blank" rel="noopener">محادثة واتساب</a><a class="btn outline" href="tel:+966596891500">اتصال مباشر</a></div>
+<div class="contact-box"><h3>موقع المكتب</h3><p>جدة — شارع أم المؤمنين صفية، بجوار سباكة الفولت العالي.</p><p>يرجى التواصل معنا لتأكيد أوقات استقبال العملاء قبل الزيارة.</p><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=شارع+أم+المؤمنين+صفية+جدة" target="_blank" rel="noopener">فتح الموقع على الخرائط</a></div></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© مكتب برق التميز للخدمات العامة والسداد</span><span>BARQ ALTAMAYUZ</span><span>جميع الحقوق محفوظة</span></div></footer>
+<a class="whatsapp" href="https://wa.me/966596891500" target="_blank" rel="noopener">واتساب المكتب</a>
+<script>
+function calculate(){const a=Math.max(0,Number(document.getElementById('amount').value)||0);const r=Math.max(0,Number(document.getElementById('rate').value)||0)/100;const m=(Number(document.getElementById('years').value)||1)*12;const total=a*(1+r*(m/12));const monthly=total/m;const fmt=n=>n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})+' ر.س';document.getElementById('monthly').textContent=fmt(monthly);document.getElementById('total').textContent=fmt(total)}
+document.getElementById('calc').addEventListener('click',calculate);['amount','rate','years'].forEach(id=>document.getElementById(id).addEventListener('change',calculate));calculate();
+</script>
+</body></html>
